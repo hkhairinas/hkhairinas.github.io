@@ -1,0 +1,36 @@
+<section>
+  <!-- <mat-grid-list cols="2" rowHeight="2:1">
+    <mat-grid-tile>1</mat-grid-tile>
+    <mat-grid-tile>2</mat-grid-tile>
+    <mat-grid-tile>3</mat-grid-tile>
+    <mat-grid-tile>4</mat-grid-tile>
+  </mat-grid-list> -->
+  <mat-card class="card">
+    <mat-card-header>
+      <div mat-card-avatar class="header-image"></div>
+      <mat-card-title>Tommy Hawk</mat-card-title>
+      <mat-card-subtitle>
+        <span><mat-icon class="icon">place</mat-icon> In my life</span>
+      </mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="../../assets/Lawas.jpg" alt="My Photo">
+    <mat-card-content>
+      <p>
+        Hi, Welcome to my sites.
+      </p>
+      <p>
+        My name is Hutomo Khairinas, You can call Me Tommy. I love to code, playing games, and modifying everything.
+      </p>
+      <p>
+        You can find me here :
+      </p>
+    </mat-card-content>
+    <mat-card-actions class="horizontal">
+      <div *ngFor="let item of btnLink">
+        <a mat-icon-button href='{{ item.url }}' target="_blank" title='{{ item.title }}'>
+          <mat-icon class="{{ item.class }}" aria-hidden="true"></mat-icon>
+        </a>
+      </div>
+    </mat-card-actions>
+  </mat-card>
+</section>

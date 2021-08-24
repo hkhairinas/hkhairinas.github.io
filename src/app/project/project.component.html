@@ -1,0 +1,29 @@
+<section>
+  <header>
+    <p>Projects & Applications</p>
+  </header>
+  <mat-divider></mat-divider>
+  <mat-tab-group>
+    <mat-tab label="Projects">
+      <mat-list>
+        <mat-list-item *ngFor="let p of listProjects">
+          <a mat-button href="{{ p.url }}">
+            <mat-icon>{{ p.icon }}</mat-icon>
+              <span style="color:{{ p.color }}"> {{ p.title }} </span>
+          </a>
+        </mat-list-item>
+      </mat-list>
+    </mat-tab>
+    <mat-tab label="Applications">
+      <mat-list>
+        <mat-list-item *ngFor="let a of listApps">
+          <a mat-button href="{{ a.url }}">
+            <mat-icon matListIcon class="mdi mdi-application"></mat-icon>
+            <span> {{ a.title }} </span>
+          </a>
+        </mat-list-item>
+      </mat-list>
+    </mat-tab>
+  </mat-tab-group>
+
+</section>

@@ -1,0 +1,46 @@
+section {
+  max-width: 100%;
+  background-color: white;
+  padding: 0.5em;
+  color: grey;
+}
+h1 {
+  text-align: center;
+}
+.header-image {
+ background-image: url(../../assets/myLogoTH.png);
+ background-size: cover;
+}
+img {
+ width: 100%;
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+}
+@media screen and (min-width: 768px){
+  mat-card {
+    width: 40%;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  mat-card {
+    width: 70%;
+    margin: auto;
+  }
+}
+
+mat-grid-tile {
+  background: lightblue;
+}
+mat-icon {
+  display: inline-flex;
+  vertical-align: top;
+}
+.horizontal {
+  display: flex;
+}
+
+mat-list {
+  color: #673ab7;
+}

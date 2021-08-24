@@ -1,0 +1,83 @@
+section {
+  max-width: 100%;
+  background-color: white;
+  padding: 0.5em;
+  color: grey;
+  opacity: 90%;
+}
+
+p {
+  font-size: small;
+}
+
+header {
+  background-color: gray;
+  color: whitesmoke;
+  padding: 1rem;
+  text-align: end;
+  border-radius: 1px;
+}
+
+header span {
+  // border: 1px solid black;
+  // border-radius: 3px;
+  // background-color: white;
+  // padding: 3px;
+  color: blue;
+}
+
+.txt-animate {
+  border: 1px solid #673ab7;
+  border-radius: 2px;
+  padding: 0.2rem;
+  background-color: lightcyan;
+  color: #673ab7;
+}
+
+.txt-animate::before {
+  content: 'Code';
+  animation: animate infinite 10s;
+}
+
+@keyframes animate {
+  25% {
+    content: 'Playing Games';
+  }
+  50% {
+    content: 'Modifying Codes';
+  }
+  75% {
+    content: 'Making Something New!';
+  }
+}
+
+.container {
+  max-width: 100%;
+  padding: 0.5em;
+  border: 1px solid #673ab7;
+  border-radius: 1px;
+}
+
+.content {
+  padding: 0.2rem;
+}
+
+.skill {
+  max-width: 50%;
+  margin: 10px;
+  padding: 5px;
+  color: #673ab7;
+}
+
+.skill-name {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  background-color: lightcyan;
+  padding: 10px;
+  border-radius: 2px;
+}
+
+mat-progress-bar {
+  justify-content: center;
+}
