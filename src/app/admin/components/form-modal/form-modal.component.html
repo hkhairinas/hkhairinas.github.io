@@ -1,0 +1,26 @@
+<div class="ui floating message container">
+  <i class="close icon" (click)="onCancel()"></i>
+  <div class="header">
+    <h2>{{ formModalInputs.title }}</h2>
+  </div>
+  <div class="content">
+    <form class="ui form" [formGroup]="formGroup" (ngSubmit)="onSubmit()">
+      <div class="field" *ngFor="let formField of formModalInputs.formFields">
+        <label>
+          {{ formField.label }}
+          <input type="text" formControlName="{{ formField.formControlName }}" [placeholder]="formField.placeholder">
+        </label>
+      </div>
+      <div *ngIf="!formModalInputs.isEditing">
+        <button class="ui button primary" type="submit" [disabled]="!formGroup.valid">
+          {{ formModalInputs.buttonText }}
+        </button>
+      </div>
+      <div *ngIf="formModalInputs.isEditing">
+        <button class="ui button primary" type="submit" [disabled]="!formGroup.valid">
+          {{ formModalInputs.buttonText }}
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

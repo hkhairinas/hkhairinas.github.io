@@ -1,0 +1,11 @@
+h1,
+h2,
+h3 {
+  color: white;
+}
+.column {
+  color: grey;
+}
+i:hover {
+  color: #54c8ff;
+}

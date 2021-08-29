@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "hutomo-khairinas": {
+      "hosting": {
+        "hkhairinas": [
+          "hutomo-khairinas"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "hutomo-khairinas"
+  }
+}

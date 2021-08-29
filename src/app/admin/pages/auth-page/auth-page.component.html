@@ -1,0 +1,25 @@
+<div class="ui middle aligned center aligned grid login">
+  <div class="column">
+    <h2 class="ui blue image header">
+      <div class="content">Login</div>
+    </h2>
+    <form class="ui large form" [formGroup]="login" (ngSubmit)="onSubmit()">
+      <div class="ui segment">
+        <div class="field">
+          <div class="ui left icon input">
+            <i class="user icon"></i>
+            <input type="email" placeholder="Email" formControlName="username">
+          </div>
+        </div>
+        <div class="field">
+          <div class="ui left icon input">
+            <i class="lock icon"></i>
+            <input type="password" placeholder="Password" formControlName="password">
+          </div>
+        </div>
+        <button class="ui fluid large primary button" type="submit">Login</button>
+      </div>
+    </form>
+  </div>
+
+</div>

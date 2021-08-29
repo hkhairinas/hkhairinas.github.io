@@ -1,0 +1,16 @@
+<div class="ui container">
+  <div class="ui horizontal divider">
+    <h1 id="projects">Tools</h1>
+  </div>
+
+  <div class="ui center aligned">
+    <div class="ui medium horizontal divided list">
+      <div class="item" *ngFor="let tool of $tools |async">
+        <img src=" {{ tool.toolImgUrl }} " alt="" class="ui avatar image">
+        <div class="content">
+          <a href="" class="header"> {{ tool.toolName }} </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

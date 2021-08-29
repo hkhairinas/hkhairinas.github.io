@@ -1,0 +1,86 @@
+.txt-animate {
+  color: #54c8ff;
+  font-size: 2rem;
+  padding: 0.2rem;
+}
+
+.txt-animate::before {
+  content: "";
+  animation: animate infinite 10s;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    content: "I Build Websites";
+  }
+  40% {
+    content: "I Build Apps";
+  }
+  80% {
+    content: "I Modify System";
+  }
+}
+
+p,
+h1,
+h2,
+h3 {
+  color: white;
+}
+
+.about {
+  padding: 2em;
+}
+
+.mycontainer {
+  padding: 7rem;
+}
+
+.text {
+  line-height: 1.5;
+  margin-bottom: 5px;
+}
+
+.second {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.head {
+  font-size: 36px;
+  line-height: 1.5;
+}
+
+.desc {
+  font-size: 20px;
+}
+
+.img {
+  max-width: 450px;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .mycontainer {
+    padding: 2em;
+  }
+  .second {
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+  .head {
+    font-size: 36px;
+    line-height: 1.5;
+    text-align: center;
+  }
+  .desc {
+    font-size: 20px;
+    text-align: center;
+  }
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

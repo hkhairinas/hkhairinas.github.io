@@ -1,0 +1,19 @@
+<div class="ui container">
+  <div class="ui horizontal divider">
+    <h1 id="skills">Tech Stack</h1>
+  </div>
+
+  <div class="ui five column stackable grid" align="center">
+    <div class="column" *ngFor="let skill of $skills |async">
+      <!-- <div class="ui tiny images"> -->
+      <!-- <img src=" {{ skill.skillImgUrl }} " alt="" class="ui rounded image"> -->
+      <!-- </div> -->
+      <i class="{{ skill.style }} i" style="font-size: 36px;"></i>
+      <div class="content">
+        <p class="header">{{ skill.skillName}}</p>
+        <!-- <div class="description">{{ skill.skillLevel}}</div> -->
+      </div>
+    </div>
+  </div>
+
+</div>
